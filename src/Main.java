@@ -65,7 +65,12 @@ public class Main {
         double monnaie = montant - p.price;
         System.out.println("Vous avez acheté : " + p.productName);
         System.out.println("Monnaie rendue : " + monnaie + " MAD");
+        updateStock(p);
     }
+    static void updateStock(Product product){
+        product.stoke-=1;
+    }
+
 
     }
 
